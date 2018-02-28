@@ -8,6 +8,6 @@
 <div class="gallery">
     @foreach (var item in Model)
     {
-            <img class="item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" alt="@item.DeviceName.ToString()" onerror="hidden = true" onclick="showInfo()">
+            <img class="item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" alt="@item.DeviceName.ToString()">
     }
 </div>
