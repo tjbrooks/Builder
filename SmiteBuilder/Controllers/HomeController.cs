@@ -40,7 +40,6 @@ namespace SmiteBuilder.Controllers
             ViewData["Message"] = "Browse Items";
             ItemSetModel ms = new ItemSetModel();
             return View(ms.ItemSet);
-
         }
 
         public IActionResult Gods()

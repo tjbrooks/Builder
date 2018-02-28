@@ -9,6 +9,8 @@
 <div class="gallery">
     @foreach (var god in Model)
     {
-        <img class="god-img" id="@god.id.ToString()" src="@god.card.ToString()" alt="@god.name.ToString()">
+        <div class="img-box">
+            <img class="god-img" id="@god.id.ToString()" src="@god.card.ToString()" alt="@god.name.ToString()">
+        </div>
     }
 </div>
