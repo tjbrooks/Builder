@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Items";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<div class="gallery">
+    @foreach (var item in Model)
+    {
+            <img class="item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" alt="@item.DeviceName.ToString()" onerror="hidden = true" onclick="showInfo()">
+    }
+</div>

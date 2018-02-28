@@ -1,0 +1,104 @@
+﻿@model IEnumerable<SmiteBuilder.Models.GodModel>
+
+@{
+    ViewData["Title"] = "Gods";
+}
+
+<h2>Gods</h2>
+
+<div class="gallery">
+    <img class="god-img" id="3492" src="/images/achilles.jpg" alt="Achilles">
+    <img class="god-img" id="1737" src="/images/agni.jpg" alt="Agni">
+    <img class="god-img" id="1956" src="/images/ah-muzen-cab.jpg" alt="Ah Muzen Cab">
+    <img class="god-img" id="2056" src="/images/ah-puch.jpg" alt="Ah Puch">
+    <img class="god-img" id="2110" src="/images/amaterasu.jpg" alt="Amaterasu">
+    <img class="god-img" id="1773" src="/images/anhur.jpg" alt="Anhur">
+    <img class="god-img" id="1668" src="/images/anubis.jpg" alt="Anubis">
+    <img class="god-img" id="2034" src="/images/ao-kuang.jpg" alt="Ao Kuang">
+    <img class="god-img" id="1898" src="/images/aphrodite.jpg" alt="Aphrodite">
+    <img class="god-img" id="1899" src="/images/apollo.jpg" alt="Apollo">
+    <img class="god-img" id="1699" src="/images/arachne.jpg" alt="Arachne">
+    <img class="god-img" id="1782" src="/images/ares.jpg" alt="Ares">
+    <img class="god-img" id="1748" src="/images/artemis.jpg" alt="Artemis">
+    <img class="god-img" id="3336" src="/images/artio.jpg" alt="Artio">
+    <img class="god-img" id="1919" src="/images/athena.jpg" alt="Athena">
+    <img class="god-img" id="2037" src="/images/awilix.jpg" alt="Awilix">
+    <img class="god-img" id="1809" src="/images/bacchus.jpg" alt="Bacchus">
+    <img class="god-img" id="1755" src="/images/bakasura.jpg" alt="Bakasura">
+    <img class="god-img" id="1678" src="/images/bastet.jpg" alt="Bastet">
+    <img class="god-img" id="2047" src="/images/bellona.jpg" alt="Bellona">
+    <img class="god-img" id="2008" src="/images/cabrakan.jpg" alt="Cabrakan">
+    <img class="god-img" id="2189" src="/images/camazotz.jpg" alt="Camazotz">
+    <img class="god-img" id="3419" src="/images/cerberus.jpg" alt="Cerberus">
+    <img class="god-img" id="2268" src="/images/cernunnos.jpg" alt="Cernunnos">
+    <img class="god-img" id="1966" src="/images/chaac.jpg" alt="Chaac">
+    <img class="god-img" id="1921" src="/images/change.jpg" alt="Chang&#39;e">
+    <img class="god-img" id="2075" src="/images/chiron.jpg" alt="Chiron">
+    <img class="god-img" id="1920" src="/images/chronos.jpg" alt="Chronos">
+    <img class="god-img" id="2319" src="/images/cu-chulainn.jpg" alt="Cu Chulainn">
+    <img class="god-img" id="1778" src="/images/cupid.jpg" alt="Cupid">
+    <img class="god-img" id="2270" src="/images/da-ji.jpg" alt="Da Ji">
+    <img class="god-img" id="3377" src="/images/discordia.jpg" alt="Discordia">
+    <img class="god-img" id="2138" src="/images/erlang-shen.jpg" alt="Erlang Shen">
+    <img class="god-img" id="2136" src="/images/fafnir.jpg" alt="Fafnir">
+    <img class="god-img" id="1843" src="/images/fenrir.jpg" alt="Fenrir">
+    <img class="god-img" id="1784" src="/images/freya.jpg" alt="Freya">
+    <img class="god-img" id="2269" src="/images/ganesha.jpg" alt="Ganesha">
+    <img class="god-img" id="1978" src="/images/geb.jpg" alt="Geb">
+    <img class="god-img" id="1763" src="/images/guan-yu.jpg" alt="Guan Yu">
+    <img class="god-img" id="3344" src="/images/hachiman.jpg" alt="Hachiman">
+    <img class="god-img" id="1676" src="/images/hades.jpg" alt="Hades">
+    <img class="god-img" id="1674" src="/images/he-bo.jpg" alt="He Bo">
+    <img class="god-img" id="1718" src="/images/hel.jpg" alt="Hel">
+    <img class="god-img" id="1848" src="/images/hercules.jpg" alt="Hercules">
+    <img class="god-img" id="2040" src="/images/hou-yi.jpg" alt="Hou Yi">
+    <img class="god-img" id="1673" src="/images/hun-batz.jpg" alt="Hun Batz">
+    <img class="god-img" id="1918" src="/images/isis.jpg" alt="Isis">
+    <img class="god-img" id="2179" src="/images/izanami.jpg" alt="Izanami">
+    <img class="god-img" id="1999" src="/images/janus.jpg" alt="Janus">
+    <img class="god-img" id="2122" src="/images/jing-wei.jpg" alt="Jing Wei">
+    <img class="god-img" id="1649" src="/images/kali.jpg" alt="Kali">
+    <img class="god-img" id="2066" src="/images/khepri.jpg" alt="Khepri">
+    <img class="god-img" id="1677" src="/images/kukulkan.jpg" alt="Kukulkan">
+    <img class="god-img" id="1993" src="/images/kumbhakarna.jpg" alt="Kumbhakarna">
+    <img class="god-img" id="2260" src="/images/kuzenbo.jpg" alt="Kuzenbo">
+    <img class="god-img" id="1797" src="/images/loki.jpg" alt="Loki">
+    <img class="god-img" id="2051" src="/images/medusa.jpg" alt="Medusa">
+    <img class="god-img" id="1941" src="/images/mercury.jpg" alt="Mercury">
+    <img class="god-img" id="1915" src="/images/ne-zha.jpg" alt="Ne Zha">
+    <img class="god-img" id="1872" src="/images/neith.jpg" alt="Neith">
+    <img class="god-img" id="1980" src="/images/nemesis.jpg" alt="Nemesis">
+    <img class="god-img" id="2214" src="/images/nike.jpg" alt="Nike">
+    <img class="god-img" id="2036" src="/images/nox.jpg" alt="Nox">
+    <img class="god-img" id="1958" src="/images/nu-wa.jpg" alt="Nu Wa">
+    <img class="god-img" id="1669" src="/images/odin.jpg" alt="Odin">
+    <img class="god-img" id="2000" src="/images/osiris.jpg" alt="Osiris">
+    <img class="god-img" id="1881" src="/images/poseidon.jpg" alt="Poseidon">
+    <img class="god-img" id="1698" src="/images/ra.jpg" alt="Ra">
+    <img class="god-img" id="2113" src="/images/raijin.jpg" alt="Raijin">
+    <img class="god-img" id="2002" src="/images/rama.jpg" alt="Rama">
+    <img class="god-img" id="2063" src="/images/ratatoskr.jpg" alt="Ratatoskr">
+    <img class="god-img" id="2065" src="/images/ravana.jpg" alt="Ravana">
+    <img class="god-img" id="1988" src="/images/scylla.jpg" alt="Scylla">
+    <img class="god-img" id="2005" src="/images/serqet.jpg" alt="Serqet">
+    <img class="god-img" id="2107" src="/images/skadi.jpg" alt="Skadi">
+    <img class="god-img" id="1747" src="/images/sobek.jpg" alt="Sobek">
+    <img class="god-img" id="2074" src="/images/sol.jpg" alt="Sol">
+    <img class="god-img" id="1944" src="/images/sun-wukong.jpg" alt="Sun Wukong">
+    <img class="god-img" id="2123" src="/images/susano.jpg" alt="Susano">
+    <img class="god-img" id="2030" src="/images/sylvanus.jpg" alt="Sylvanus">
+    <img class="god-img" id="2147" src="/images/terra.jpg" alt="Terra">
+    <img class="god-img" id="1943" src="/images/thanatos.jpg" alt="Thanatos">
+    <img class="god-img" id="2226" src="/images/the-morrigan.jpg" alt="The Morrigan">
+    <img class="god-img" id="1779" src="/images/thor.jpg" alt="Thor">
+    <img class="god-img" id="2203" src="/images/thoth.jpg" alt="Thoth">
+    <img class="god-img" id="1924" src="/images/tyr.jpg" alt="Tyr">
+    <img class="god-img" id="1991" src="/images/ullr.jpg" alt="Ullr">
+    <img class="god-img" id="1723" src="/images/vamana.jpg" alt="Vamana">
+    <img class="god-img" id="1869" src="/images/vulcan.jpg" alt="Vulcan">
+    <img class="god-img" id="1864" src="/images/xbalanque.jpg" alt="Xbalanque">
+    <img class="god-img" id="2072" src="/images/xing-tian.jpg" alt="Xing Tian">
+    <img class="god-img" id="1670" src="/images/ymir.jpg" alt="Ymir">
+    <img class="god-img" id="1672" src="/images/zeus.jpg" alt="Zeus">
+    <img class="god-img" id="1926" src="/images/zhong-kui.jpg" alt="Zhong Kui">
+</div>

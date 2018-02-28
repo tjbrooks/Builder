@@ -12,8 +12,8 @@ namespace SmiteBuilder.Controllers
     {
         public IActionResult Index()
         {
-            ItemSetModel ms = new ItemSetModel();
-            return View(ms.ItemSet);
+            ViewData["Message"] = "Future home of builder";
+            return View();            
         }
 
         public IActionResult About()
@@ -35,11 +35,19 @@ namespace SmiteBuilder.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        public IActionResult Manage()
+        public IActionResult Items()
         {
-            ViewData["Message"] = "Manage gods.";
+            ViewData["Message"] = "Browse Items";
+            ItemSetModel ms = new ItemSetModel();
+            return View(ms.ItemSet);
 
-            return View();
+        }
+
+        public IActionResult Gods()
+        {
+            ViewData["Message"] = "Browse Gods";
+            GodSetModel gm = new GodSetModel();
+            return View(gm.GodSet);
         }
 
     }

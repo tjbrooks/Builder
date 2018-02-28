@@ -1,0 +1,14 @@
+﻿@model IEnumerable<SmiteBuilder.Models.GodModel>
+
+@{
+    ViewData["Title"] = "Gods";
+}
+
+<h2>Gods</h2>
+
+<div class="gallery">
+    @foreach (var god in Model)
+    {
+        <img class="god-img" id="@god.id.ToString()" src="@god.card.ToString()" alt="@god.name.ToString()">
+    }
+</div>

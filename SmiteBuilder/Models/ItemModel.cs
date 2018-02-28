@@ -53,7 +53,7 @@ namespace SmiteBuilder.Models
 
         public ItemSetModel()
         {
-            string path = "1.json";
+            string path = "items.json";
             FileFormat(path);
             ItemSet = new List<ItemModel>();
             string json = System.IO.File.ReadAllText(path);

@@ -61,3 +61,38 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
+
+div.gallery.div.item-frame {
+    width: 70px;
+    height: 70px;
+    background: #222222;
+    transition: height 2s;
+    -webkit-transition: height 2s;
+}
+
+div.gallery.item-frame:hover {
+    transition-delay: 2s;
+    height: 200px;
+}
+.gallery .god-img {
+    border: .2rem solid #222;
+    box-shadow: -3px 1px 15px 0px #000;
+    cursor: pointer;
+    height: 18.4rem;
+    -o-object-fit: cover;
+    overflow: hidden;
+    width: 18rem;
+    object-fit: cover;
+    border-radius: 1%;
+    object-position: top;
+}
+
+@media (max-width: 599px) {
+    .gallery .god-img {
+        width: 100%;
+        height: 8rem;
+        background-position: left -1rem;
+        background-size: 9.5rem;
+        background-repeat: no-repeat
+    }
+}

@@ -10,15 +10,14 @@ e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug
 e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.pdb
 E:\Users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\Models\1.json
 E:\Users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.csprojResolveAssemblyReference.cache
-E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\bin\Debug\netcoreapp2.0\Models\1.json
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.deps.json
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.runtimeconfig.json
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.runtimeconfig.dev.json
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.dll
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.pdb
+E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.csprojResolveAssemblyReference.cache
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.csproj.CoreCompileInputs.cache
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.AssemblyInfoInputs.cache
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.AssemblyInfo.cs
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.dll
 E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.pdb
-E:\Users\d00bler\Visual Studio 2017\Projects\Builder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.csprojResolveAssemblyReference.cache
