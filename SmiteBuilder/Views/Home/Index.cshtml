@@ -3,15 +3,12 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="base">
+<div class="gallery">
     @foreach (var item in Model)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modeItem => item.ChildItemId)
-            </td>
-        </tr>
-
+        
+        <img class="item-img" src="@item.itemIcon_URL.ToString()" alt="@item.DeviceName.ToString()">
+        
     }
 </div>
 
