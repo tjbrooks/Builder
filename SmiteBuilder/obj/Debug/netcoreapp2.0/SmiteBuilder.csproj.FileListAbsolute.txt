@@ -1,0 +1,12 @@
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.deps.json
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.runtimeconfig.json
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.runtimeconfig.dev.json
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.dll
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\SmiteBuilder.pdb
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.csproj.CoreCompileInputs.cache
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.AssemblyInfoInputs.cache
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.AssemblyInfo.cs
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.dll
+e:\users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.pdb
+E:\Users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\bin\Debug\netcoreapp2.0\Models\1.json
+E:\Users\d00bler\Visual Studio 2017\Projects\SmiteBuilder\SmiteBuilder\obj\Debug\netcoreapp2.0\SmiteBuilder.csprojResolveAssemblyReference.cache

@@ -1,0 +1,18 @@
+﻿@model IEnumerable<ItemModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="base">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modeItem => item.ChildItemId)
+            </td>
+        </tr>
+
+    }
+</div>
+
+
