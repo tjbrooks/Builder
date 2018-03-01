@@ -71,6 +71,13 @@ namespace SmiteBuilder.Models
             json = System.IO.File.ReadAllText(path);
             ItemRoleSet = new List<ItemRole>();
             JsonConvert.PopulateObject(json, this);
+
+            foreach(ItemModel element in ItemSet)
+            {
+                var returnvalue = ItemRoleSet.Find(x => x.ItemId.Equals(element.RootItemId));
+                if(returnvalue != null)
+                    element.Role = returnvalue.Role;
+            }
         }
         public void FileFormat(string path)
         {
