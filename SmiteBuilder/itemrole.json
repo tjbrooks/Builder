@@ -2,7 +2,67 @@
   "ItemRoleSet": [
     {
       "ItemID": 9860,
-      "Role": "Guardian"
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 7610,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 14071,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 12663,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 10603,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9840,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9849,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9855,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9631,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9837,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9828,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9847,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 12675,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9844,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 9858,
+      "Role": "Mage,Guardian"
+    },
+    {
+      "ItemID": 7526,
+      "Role": "Mage,Guardian"
     }
   ]
 }
