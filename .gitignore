@@ -4,3 +4,5 @@
 
 /.vs
 /SmiteBuilder/wwwroot/images
+/SmiteBuilder/obj/Release/netcoreapp2.0/SmiteBuilder.AssemblyInfoInputs.cache
+/SmiteBuilder/obj/Release/netcoreapp2.0/SmiteBuilder.csproj.CoreCompileInputs.cache

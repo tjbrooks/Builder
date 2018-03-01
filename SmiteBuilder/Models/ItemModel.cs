@@ -45,11 +45,19 @@ namespace SmiteBuilder.Models
         public bool StartingItem { get; set; }
         public string Type { get; set; }
         public string itemIcon_URL { get; set; }
+        public string Role { get; set; }
+    }
+
+    public class ItemRole
+    {
+        public int ItemId { get; set; }
+        public string Role { get; set; }
     }
 
     public class ItemSetModel
     {
         public List<ItemModel> ItemSet { get; set; }
+        public List<ItemRole> ItemRoleSet { get; set; }
 
         public ItemSetModel()
         {
@@ -59,6 +67,10 @@ namespace SmiteBuilder.Models
             string json = System.IO.File.ReadAllText(path);
             JsonConvert.PopulateObject(json, this);
 
+            path = "itemrole.json";
+            json = System.IO.File.ReadAllText(path);
+            ItemRoleSet = new List<ItemRole>();
+            JsonConvert.PopulateObject(json, this);
         }
         public void FileFormat(string path)
         {
