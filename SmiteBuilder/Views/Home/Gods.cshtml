@@ -9,7 +9,7 @@
 <div class="gallery">
     @foreach (var god in Model)
     {
-        
+
         <div class="img-box">
             <img class="god-img" id="@god.id.ToString()" src="@god.card.ToString()" alt="@god.name.ToString()" data-toggle="tooltip" data-placement="top" title="@god.name.ToString()">
         </div>
