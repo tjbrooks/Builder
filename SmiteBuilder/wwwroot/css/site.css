@@ -92,6 +92,8 @@ div.gallery.item-frame:hover {
     margin-bottom: 8px;
     vertical-align: top;
     display: inline-block;
+    border: solid black;
+    border-top: 0px;
     border-bottom-right-radius: 25%;
     border-bottom-left-radius: 25%;
     border-top-left-radius: 25%;
