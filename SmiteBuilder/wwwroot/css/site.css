@@ -16,8 +16,7 @@
     float: left;
     box-shadow: 5px 5px 20px black;
     border-radius: .2%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 28px;
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
@@ -43,19 +42,20 @@ div.gallery-container {
     }
 
 div.desc {
-    padding: 15px;
+    padding: 0;
     text-align: center;
-    min-height: 96px;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .gallery .item-img {
     border: .2rem solid #222;
-    box-shadow: -3px 1px 15px 0px #000;
+    box-shadow: -3px 1px 15px 0 #000;
     cursor: pointer;
-    height: 18.4rem;
     -o-object-fit: cover;
     overflow: hidden;
-    width: 18rem;
     object-fit: cover;
     border-radius: 1%;
     object-position: top;
@@ -80,8 +80,24 @@ div.gallery.item-frame:hover {
 .gallery .img-box {
     width: auto;
     height: auto;
+    margin: 1px;
     vertical-align: top;
     display: inline-block;
+    zoom: 1;
+}
+.gallery .item-img-box {
+    width: 128px;
+    min-height: 188px;
+    margin: 1px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    display: inline-block;
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-top: none;
+    background-color: #222;
     zoom: 1;
 }
 .gallery .img-box .centered {
