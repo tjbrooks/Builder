@@ -5,20 +5,19 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-
 <div class="gallery">
-
     @foreach (var item in Model)
-    {
-    <div class="img-box">
-        <img tabindex="0" class="item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" alt="@item.DeviceName.ToString()" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="@item.DeviceName" data-content="@item.ItemDescription.Description">
-        <div class="centered">@item.DeviceName</div>
-    </div>
+    {<div class="img-box">
+
+            <img tabindex="0" class="item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" alt="@item.DeviceName.ToString()" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="@item.DeviceName" data-content="@item.ItemDescription.Description">
+            <div class="desc">@item.DeviceName</div>
+
+        </div>
     }
 </div>
 
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
-    });
-</script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
