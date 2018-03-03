@@ -9,3 +9,27 @@ $("img").on("error", function () {
     src = "/images" + src;
     $(this).attr("src", src);
 });
+
+var elem = document.querySelector('.grid');
+var msnry = new Masonry(elem, {
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: 200
+});
+
+// element argument can be a selector string
+//   for an individual element
+var msnry = new Masonry('.grid', {
+    // options
+});
+
+var $grid = $('.grid').masonry({
+    columnWidth: 120,
+    itemSelector: '.grid-item',
+    percentPosition: true
+});
+
+$grid.on('click', '.grid-item-content', function (event) {
+    $(event.currentTarget).parent('.grid-item').toggleClass('is-expanded');
+    $grid.masonry();
+});

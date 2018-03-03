@@ -41,14 +41,7 @@ div.gallery-container {
         border-color: darkgoldenrod;
     }
 
-div.desc {
-    padding: 0;
-    text-align: center;
-    color: #fff;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 .gallery .item-img {
     border: .2rem solid #222;
@@ -109,20 +102,68 @@ div.gallery.item-frame:hover {
     border-radius: 62%;
     border-top: 50px;
 }
-/*.container-fluid {
-    border: 1px solid #ccc;
-    float: left;
-    text-align: justify;
-    box-shadow: 5px 5px 20px black;
+* {
+    box-sizing: border-box;
 }
-div.gallery {
-    margin: 9px;
-    border: 1px solid #ccc;
+
+body {
+    font-family: sans-serif;
+}
+
+.grid {
+    background: #EEE;
+    max-width: 1200px;
+}
+
+.grid-item {
+    height: 180px;
     float: left;
-    width: 9%;
-    border-radius: 28%;
-    min-width: 128px;
-    vertical-align: top;
-    display: inline-block;
-    zoom: 1;
-}*/
+    padding: 1rem;
+}
+
+/* item is invisible, but used for layout */
+.grid-item,
+.grid-item-content {
+    width: 12rem;
+    height: 17rem;
+}
+
+/* grid-item-content is visible, and transitions size */
+.grid-item-content {
+    width: 12rem;
+    height: 17rem;
+    -webkit-transition: width 0.4s, height 0.4s;
+    transition: width 0.4s, height 0.4s;
+}
+.grid-item-img{
+    width: 12rem;
+    border-radius: 10%;
+}
+.grid-item-text {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 12rem;
+}
+.grid-item:hover .grid-item-content {
+    border-color: white;
+    
+    cursor: pointer;
+}
+
+/* both item and item content change size */
+.grid-item.is-expanded,
+.grid-item.is-expanded .grid-item-content {
+    width: 360px;
+    height: 240px;
+   
+}
+
+.grid-item.is-expanded {
+    z-index: 2;
+    
+}
+
+    .grid-item.is-expanded .grid-item-content {
+        border-radius: 10%;
+        background-color: #0000000f;
+    }

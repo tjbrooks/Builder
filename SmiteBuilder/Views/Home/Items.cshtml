@@ -5,13 +5,14 @@
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<div class="gallery">
+<div class="grid">
     @foreach (var item in Model)
-    {<div class="item-img-box">
-
-            <img tabindex="0" class="item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" onerror="getLocalImg()" alt="@item.DeviceName.ToString()" data-toggle="popover" data-trigger="focus" data-placement="bottom" title="@item.DeviceName" data-content="@item.ItemDescription.Description">
-            <div class="desc">@item.DeviceName</div>
-
+    {<div class="grid-item">
+         <div class="grid-item-content">
+             
+             <img class="grid-item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" onerror="getLocalImg()" alt="@item.DeviceName.ToString()">
+             <div class="grid-item-text">@item.DeviceName</div>
+         </div>
         </div>
     }
 </div>
