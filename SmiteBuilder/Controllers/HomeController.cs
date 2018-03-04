@@ -15,7 +15,9 @@ namespace SmiteBuilder.Controllers
 
         public IActionResult Index()
         {
-            ViewData["Message"] = "Future home of builder";
+            ViewBag.Message = "Future home of builder";
+            ViewBag.Items = ms.GetItems();
+            ViewBag.Gods = gm.GetGods();
             return View();            
         }
 
