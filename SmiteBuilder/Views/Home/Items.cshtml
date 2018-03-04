@@ -9,9 +9,31 @@
     @foreach (var item in Model)
     {<div class="grid-item">
          <div class="grid-item-content">
-             
              <img class="grid-item-img" id="@item.ItemId.ToString()" src="@item.itemIcon_URL.ToString()" onerror="getLocalImg()" alt="@item.DeviceName.ToString()">
+
+             <div class="grid-item-data">
+                 @{
+            string tier;
+            if (item.ItemTier == 1) { tier = "I"; }
+            else if (item.ItemTier == 2) { tier = "II"; }
+            else if (item.ItemTier == 3) { tier = "III"; }
+            else if (item.ItemTier == 4) { tier = "IV"; }
+            else { tier = ""; }
+            string description;
+            if (item.ItemDescription.SecondaryDescription != null && item.ItemDescription.SecondaryDescription != "") { description = item.ItemDescription.SecondaryDescription; }
+            else if (item.ItemDescription.Description != null && item.ItemDescription.Description != "") { description = item.ItemDescription.Description; }
+            else if (item.ShortDesc != null && item.ShortDesc != "") { description = item.ShortDesc; }
+            else { description = ""; }
+                 }
+                 <p>@description</p>
+                 <p>@item.Role</p>
+                 @foreach (var menuItem in item.ItemDescription.MenuItems)
+        {
+         <p>@menuItem.Description  @menuItem.Value</p>
+}
+             </div>
              <div class="grid-item-text">@item.DeviceName</div>
+             <div class="grid-item-text-ex">@tier<p>@item.Price</p></div>
          </div>
         </div>
     }

@@ -43,9 +43,9 @@ namespace SmiteBuilder.Models
         public int RootItemId { get; set; }
         public string ShortDesc { get; set; }
         public bool StartingItem { get; set; }
-        public string Type { get; set; }
+        public string Type { get; set; } // Item, Consumable, Active
         public string itemIcon_URL { get; set; }
-        public string Role { get; set; }
+        public string Role { get; set; } // Assassin/Warrior, Mage/Guardian, Hunter, Ratatoskr
     }
 
     public class ItemRole
