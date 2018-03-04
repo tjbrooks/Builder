@@ -54,7 +54,7 @@ namespace SmiteBuilder.Models
         public string Role { get; set; }
     }
 
-    public class ItemSetModel
+    public class ItemSetModel : Model
     {
         public List<ItemModel> ItemSet { get; set; }
         public List<ItemRole> ItemRoleSet { get; set; }
@@ -62,9 +62,8 @@ namespace SmiteBuilder.Models
         public ItemSetModel()
         {
             string path = "items.json";
-            FileFormat(path);
             ItemSet = new List<ItemModel>();
-            string json = System.IO.File.ReadAllText(path);
+            string json = FileFormat(System.IO.File.ReadAllText(path), "ItemSet");
             JsonConvert.PopulateObject(json, this);
 
             path = "itemrole.json";
@@ -78,17 +77,6 @@ namespace SmiteBuilder.Models
                 if(returnvalue != null)
                     element.Role = returnvalue.Role;
             }
-        }
-        public void FileFormat(string path)
-        {
-            string s = System.IO.File.ReadAllText(path);
-            if (!s.StartsWith("{\"ItemSet\":")) s = String.Concat("{\"ItemSet\":", s);
-            if (!s.EndsWith("}")) s = String.Concat(s, "}");
-            System.IO.File.WriteAllText(path, s);
-        }
-        public List<ItemModel> GetItems()
-        {
-            return ItemSet;
         }
     }
 }

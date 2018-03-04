@@ -18,29 +18,24 @@ namespace SmiteBuilder.Models
         public string card { get; set; }
     }
 
-    public class GodSetModel
+    public class GodSetModel : Model
     {
         public List<GodModel> GodSet { get; }
 
         public GodSetModel()
         {
             string path = "gods.json";
-            FileFormat(path);
             GodSet = new List<GodModel>();
-            string json = System.IO.File.ReadAllText(path);
+            string json = FileFormat(System.IO.File.ReadAllText(path), "GodSet");
             JsonConvert.PopulateObject(json, this);
+        }
 
-        }
-        public void FileFormat(string path)
+        public void GetGodsInfo()
         {
-            string s = System.IO.File.ReadAllText(path);
-            if (!s.StartsWith("{\"GodSet\":")) s = String.Concat("{\"GodSet\":", s);
-            if (!s.EndsWith("}")) s = String.Concat(s, "}");
-            System.IO.File.WriteAllText(path, s);
-        }
-        public List<GodModel> GetGods()
-        {
-            return GodSet;
+            foreach(var god in GodSet)
+            {
+                
+            }
         }
     }
 }
