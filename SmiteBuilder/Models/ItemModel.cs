@@ -86,5 +86,9 @@ namespace SmiteBuilder.Models
             if (!s.EndsWith("}")) s = String.Concat(s, "}");
             System.IO.File.WriteAllText(path, s);
         }
+        public List<ItemModel> GetItems()
+        {
+            return ItemSet;
+        }
     }
 }

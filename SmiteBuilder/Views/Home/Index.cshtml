@@ -1,10 +1,18 @@
-﻿@model IEnumerable<ItemModel>
+﻿@using SmiteBuilder.Models;
 @{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home Page";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
 
 
+<div>
 
+    <select id="GodSelection">
+        @foreach (GodModel god in ViewBag.Gods)
+        {
+            <option>@god.name</option>
+        }
+    </select>
 
+</div>
