@@ -38,5 +38,9 @@ namespace SmiteBuilder.Models
             if (!s.EndsWith("}")) s = String.Concat(s, "}");
             System.IO.File.WriteAllText(path, s);
         }
+        public List<GodModel> GetGods()
+        {
+            return GodSet;
+        }
     }
 }

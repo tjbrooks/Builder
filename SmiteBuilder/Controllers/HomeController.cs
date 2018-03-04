@@ -10,6 +10,9 @@ namespace SmiteBuilder.Controllers
 {
     public class HomeController : Controller
     {
+        ItemSetModel ms = new ItemSetModel();
+        GodSetModel gm = new GodSetModel();
+
         public IActionResult Index()
         {
             ViewData["Message"] = "Future home of builder";
@@ -38,14 +41,12 @@ namespace SmiteBuilder.Controllers
         public IActionResult Items()
         {
             ViewData["Message"] = "Browse Items";
-            ItemSetModel ms = new ItemSetModel();
             return View(ms.ItemSet);
         }
 
         public IActionResult Gods()
         {
             ViewData["Message"] = "Browse Gods";
-            GodSetModel gm = new GodSetModel();
             return View(gm.GodSet);
         }
 
